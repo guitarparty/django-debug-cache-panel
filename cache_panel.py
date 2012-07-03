@@ -114,7 +114,7 @@ class CacheWrapper(object):
         return self.real_methods['clear']()
 
 
-wrapper = CacheWrapper(cache.cache)
+wrapper = CacheWrapper(cache.get_cache('johnny'))
 cache.cache = wrapper
 
 
